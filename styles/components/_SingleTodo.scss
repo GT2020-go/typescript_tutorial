@@ -1,0 +1,46 @@
+.todos__single {
+  display: flex;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: yellow;
+  transition: 0.2s;
+  &:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.025);
+  }
+  &--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+  }
+}
+span.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos__single {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+    &__single {
+      width: 100%;
+    }
+  }
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+}

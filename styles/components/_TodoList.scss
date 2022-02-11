@@ -1,6 +1,22 @@
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .remove {
+    background-color: lightcoral;
+  }
+}
+
 .todos {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 47.5%;
+  flex-direction: column;
+  background-color: aquamarine;
+  padding: 10px;
+  &__heading {
+    font-size: 30px;
+  }
 }

@@ -24,6 +24,7 @@ const InputField = ({ todo, setTodo, handleAdd }: Props) => {
         className="input__box"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
+        autoFocus
       />
       <button className="input__submit">Go</button>
     </form>
